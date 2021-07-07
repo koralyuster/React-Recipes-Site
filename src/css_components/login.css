@@ -1,0 +1,11 @@
+.imgLogin {
+  display: flex;
+  max-width: 39rem;
+  height: auto;
+}
+
+@media screen and (min-width: 750px) {
+  .imgLogint {
+    display: none;
+  }
+}

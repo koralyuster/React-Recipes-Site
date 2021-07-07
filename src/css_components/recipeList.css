@@ -1,0 +1,9 @@
+.float-child {
+  width: 47%;
+  float: left;
+  padding: 10px;
+}
+
+.like-btn {
+  text-align: end;
+}

@@ -1,0 +1,15 @@
+.imgRecipe {
+  width: 1230px;
+  height: 430px;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+  .imgRecipe {
+    width: 400px;
+    height: 300px;
+    object-fit: scale-down;
+    object-position: 50% 50%;
+  }
+}
