@@ -27,7 +27,10 @@ function Navbar(props){
     <div className="container nav_top">
       <div className="row align-items-center">
         <div className="logo col-lg-3 d-flex justify-content-between align-items-center">
-          <h2 className="text-dark" style={{fontFamily: 'Courgette'}}>yammiZ</h2>
+          <Link to="/">
+            <h2 className="text-dark" style={{fontFamily: 'Courgette'}}>yammiZ</h2>
+          </Link>
+          
           <nav className="d-flex justify-content-end align-items-center">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>

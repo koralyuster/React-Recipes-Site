@@ -79,27 +79,30 @@ function EditRecipe(props){
             {errors.recipeTime && <small className="text-danger">* You must fill cook time</small>}
           </div>
 
-          <div className="col-lg-6">
-            <label>Meal Type</label>
-            <input {...typeRef} type="text" className="form-control mt-2"/>
+          <div className="col-lg-6 mt-2">
+            <label>* Select Meal Type</label>
+            <select {...typeRef} type="text" className="form-select mt-2">
+              <option value="meal">Meal</option>
+              <option value="desert">Desert</option>
+            </select>
             {errors.recipeType && <small className="text-danger">* You must fill meal type</small>}
           </div>
 
-          <div className="col-lg-6">
-            <label>Recipe Image</label>
+          <div className="col-lg-6 mt-2">
+            <label>Recipe Image URL</label>
             <input {...imageRef} type="text" className="form-control mt-2"/>
             {errors.recipeImage && <small className="text-danger">* You must enter valid url</small>}
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-lg-6 mt-2">
             <label>Ingredients</label>
-            <input {...ingredientsRef} type="text" className="form-control mt-2" style={{padding: "32px 20px"}}/>
+            <textarea {...ingredientsRef} className="form-control mt-2" style={{height: "12rem"}}/>
             {errors.recipeIngredients && <small className="text-danger">* You must fill igredients</small>}
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-lg-6 mt-2">
             <label>Explain</label>
-            <input {...explainRef} type="text" className="form-control mt-2" style={{padding: "32px 20px"}}/>
+            <textarea {...explainRef}  className="form-control mt-2" style={{height: "12rem"}}/>
             {errors.recipeExplain && <small className="text-danger">* You must fill explain</small>}
           </div>
 

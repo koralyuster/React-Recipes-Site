@@ -70,8 +70,8 @@ function DetailRecipe(props){
                 </div>
               )
             })}
-       <div className="text-center mx-auto">
-         <Link to="/" className="btn btn-light shadow-sm mt-4">Go Back</Link>    
+       <div className="d-flex justify-content-right">
+         <Link to="/" className="btn btn-light shadow-sm mt-4">Back</Link>    
       </div>     
       
 

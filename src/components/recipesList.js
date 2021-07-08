@@ -21,7 +21,7 @@ function RecipesList(props){
           await updateUserRecipeAddFav(item._id);
           forceUpdate(update + 1);
         }}
-        className="btn btn-danger"><i className="fa fa-heart"></i></button>
+        className="btn btn-dark"><i className="fa fa-heart"></i></button>
       )
     }
     else{
@@ -30,7 +30,7 @@ function RecipesList(props){
           await removeUserRecipeFav(item._id);
           forceUpdate(update + 1);
         }} 
-        className="btn btn-dark"><i className="fa fa-heart"></i></button>
+        className="btn btn-danger"><i className="fa fa-heart"></i></button>
       )
     }
   }
@@ -44,7 +44,7 @@ function RecipesList(props){
           <div key={item._id} className="col-lg-4 p-4">
             <div className="p-2 border">
               <article className="p-3" style={{height: "29rem"}}>
-                <div className="img_recipe" style={{backgroundImage: `url(${bg})`}}></div>
+                <div className="img_recipe shadow-sm" style={{backgroundImage: `url(${bg})`}}></div>
 
                 <h4 className="float-child">{item.recipeName}</h4>
 

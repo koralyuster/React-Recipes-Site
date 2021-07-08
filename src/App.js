@@ -18,6 +18,7 @@ import ProtectedRoute from './components/protectedRoute';
 import AddRecipe from './users/addRecipe';
 import EditRecipe from './users/editRecipe';
 import DetailRecipe from './components/detailRecipe';
+import Page404 from './components/page404';
 
 function App() {
 
@@ -49,6 +50,7 @@ function App() {
             <ProtectedRoute path="/myRecipes" comp={MyRecipes}></ProtectedRoute>
             <ProtectedRoute path="/addRecipe" comp={AddRecipe}></ProtectedRoute>
             <ProtectedRoute path="/editRecipe/:id" comp={EditRecipe}></ProtectedRoute>
+            <Route path="/" component={Page404}></Route>
           </Switch>
         </main> 
       }

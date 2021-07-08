@@ -84,7 +84,7 @@ function Singup(props){
         </div>
 
         <div className="col-md-4 container-fluid mt-1">
-          <img className="imgSignup" src={imgSignup} alt="table"/>
+          <img className="imgSign" src={imgSignup} alt="table"/>
         </div>
 
       </div>

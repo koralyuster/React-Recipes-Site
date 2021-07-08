@@ -46,7 +46,7 @@ function Login(props){
 <div className="row">
   <div className="col-md-4">
 
-    <h2 className="mt-5 ms-3" style={{fontFamily: 'Courgette'}}>Hello!</h2>
+    <h2 className="mt-5 ms-3 hello" style={{fontFamily: 'Courgette'}}>Hello!</h2>
       <div className="ms-3">Don't have account? <Link to="/singup" style={{color:"#cc6600"}}>Create your account</Link></div>
 
     <form onSubmit={handleSubmit(onSubForm)} className="col-lg-4 p-3 rounded mt-3">

@@ -1,11 +1,17 @@
 .imgLogin {
   display: flex;
-  max-width: 39rem;
-  height: auto;
+  width: 48.5vw;
+  height: 100vh;
 }
 
-@media screen and (min-width: 750px) {
-  .imgLogint {
+@media screen and (max-width: 767px) {
+  img.imgLogin {
     display: none;
+  }
+
+  .container,
+  .hello {
+    display: flex;
+    justify-content: center;
   }
 }
