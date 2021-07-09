@@ -36,7 +36,7 @@ function App() {
   return (
     <Router>
       <header className="container-fluid shadow-sm">
-      {user && <Route path="/" component={Navbar}></Route> }
+       <Route path="/" component={Navbar}></Route> 
       </header>
       {user &&
         <main className="container-fluid" style={{minHeight:"80vh"}}>
