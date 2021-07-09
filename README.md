@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Recipes Site : client side React |  server side Node.js
+ 
+Recipes website project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-In the project directory, you can run:
 
-### `npm start`
+What does the project include,
+* International Recipes Site, recipes written by users from all over the world.
+* Registration, login, logout options.
+* All users of the site can view the recipes.
+* Only registered users can add, edit and delete recipes.
+* Only registered users can add a favorite recipe to favorites but also remove a recipe from favorites.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Demo website
+* CLICK HERE : https://recipes-site-project.netlify.app/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* heroku: node.js- https://node-recipes-app.herokuapp.com/
 
-### `npm test`
+<!-- USAGE EXAMPLES -->
+## Sample User Login
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There is a user ready for those who do not want to register 🙂
 
-### `npm run build`
+```sh
+    email: demo@gmail.com
+    password: 12345
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Client side structure
+![image](https://user-images.githubusercontent.com/70564042/124884251-c5d70600-dfda-11eb-8e4d-dc58a35ec431.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Server side structure
+![image](https://user-images.githubusercontent.com/70564042/124884434-ee5f0000-dfda-11eb-9ff1-83605d25c103.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project is using React hooks, Node.js and MongoDB.<br>
+Also used with,
+* [Boostrap](https://getbootstrap.com/)
+* [FontAwesome](https://fontawesome.com/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- GETTING STARTED -->
+## Getting Started
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Node.js files 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
 
-### Code Splitting
+* First start node.js
+   ```sh
+    npm install 
+   ```
+* Run and Debug in the vs. code
+   ```sh
+   Choose in the debug node.js
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React files 
 
-### Analyzing the Bundle Size
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* First start react
+   ```sh
+    npm start 
+   ```
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- CONTACT -->
+## Contact
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Koral Yuster - koralyuster1995@gmail.com
 
-### Deployment
+Linkedin Link: [https://www.linkedin.com/in/koralyuster/](https://www.linkedin.com/in/koralyuster/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
