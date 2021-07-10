@@ -18,3 +18,36 @@
     object-position: 50% 50%;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .emojis {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .emoji {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 50px) {
+  .emoji {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .name {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hobby {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,49 @@
+header .burger {
+  display: none;
+}
+
+header a {
+  color: rgba(8, 8, 8, 0.608);
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: rgb(25, 24, 24);
+}
+
+
+@media (max-width:991px) {
+  header .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  header nav {
+    z-index: 1;
+    position: absolute;
+    right: 105px;
+    top: 76px;
+    width: 70% !important;
+    background: rgb(255, 255, 255);
+    padding: 0 !important;
+    display: none;
+
+  }
+
+  header nav a {
+    display: block;
+    padding: 8px;
+    color: black;
+    border-bottom: 1px solid rgb(219, 219, 219);
+  }
+
+  header nav a:hover {
+    background: #333;
+    color: white;
+  }
+}
+
+.logoName {
+  font-family: 'Courgette';
+}

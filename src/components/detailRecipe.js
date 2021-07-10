@@ -45,7 +45,7 @@ function DetailRecipe(props){
   }
 
   return(
-    <div className="container mt-3 ms-2">
+    <div className="container-fluid mt-3 ms-2">
        {ar.map((item, i) => {
          let bg = item.recipeImage;
               return(

@@ -71,7 +71,7 @@ function MyRecipes(props){
                   <td>{item.recipeTime}</td>
                   <td>{item.recipeType}</td>
                   <td>{item.recipeIngredients}</td>
-                  <td>{item.recipeExplain}</td>
+                  <td className="block">{item.recipeExplain}</td>
                   {/* edit button & trash button: */}
                   <td>
                   <Link to={"/editRecipe/"+item._id}>

@@ -1,3 +1,4 @@
+import '../css_components/navbar.css';
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -5,12 +6,18 @@ import { getUserData, updateUserData } from '../services/userSer';
 
 function Navbar(props){
 
+  let [showMobileNav,setShowMobileNav] = useState(false);
   let [user, setUser] = useState(null);
   let history = useHistory();
 
   useEffect(() => {
     setUser(getUserData());
   }, [props.location]);
+
+  //hide the menu in mobile that we click on link:
+   const hideNavMobile = () => {
+    setShowMobileNav(false);
+  }
 
   const logout = () => {
     //check
@@ -24,14 +31,19 @@ function Navbar(props){
   }
 
   return(
-    <div className="container nav_top">
+    <div>
       <div className="row align-items-center">
-        <div className="logo col-lg-3 d-flex justify-content-between align-items-center">
+        <div className="col-lg-3 d-flex justify-content-start align-items-center">
+           <div className="burger" onClick={() => {
+            setShowMobileNav(!showMobileNav);
+          }}>
+             <i className="fa fa-bars fs-2" aria-hidden="true"></i>
+          </div>
           <Link to="/">
-            <h2 className="text-dark" style={{fontFamily: 'Courgette'}}>yammiZ</h2>
+            <h2 className="text-dark logoName">yammiZ</h2>
           </Link>
           
-          <nav className="d-flex justify-content-end align-items-center">
+          <nav onClick={hideNavMobile} className={"col-lg-9 text-start"} style={{ display: showMobileNav && "block" }} >
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             {!localStorage["tok"] ? 

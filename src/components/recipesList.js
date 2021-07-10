@@ -1,4 +1,3 @@
-import '../css_components/recipeList.css';
 import React, { useEffect, useState } from 'react';
 import { getUserData, removeUserRecipeFav, updateUserRecipeAddFav } from '../services/userSer';
 import { Link } from 'react-router-dom';
@@ -43,23 +42,27 @@ function RecipesList(props){
         return(
           <div key={item._id} className="col-lg-4 p-4">
             <div className="p-2 border">
-              <article className="p-3" style={{height: "29rem"}}>
+              <article className="p-3" style={{height: "28rem"}}>
                 <div className="img_recipe shadow-sm" style={{backgroundImage: `url(${bg})`}}></div>
 
-                <h4 className="float-child">{item.recipeName}</h4>
-
-                <div className="ms-3 float-child like-btn mb-4">
-                  {userData._id ? showBtn(item) : <small className="text-danger" style={{fontSize: "0.8rem"}}>*Log in for add recipe</small>}
-                </div>
+                <h4 className="mt-2">{item.recipeName}</h4>
    
-                <h5 className="ms-2">Time: {item.recipeTime}</h5>
+                <h5 className="mt-3">Time: {item.recipeTime}</h5>
 
-                <p className="ms-2">#{item.recipeType}</p>
+                <p>#{item.recipeType}</p>
 
-                
-                <button className="btn btn-dark"><Link to={"/detailRecipe/"+item._id} className="text-white" style={{textDecoration: "none"}}>
-                To recipe <i className="fas fa-chevron-right"></i>
-                </Link></button>
+                <div className="d-flex justify-content-between">
+
+                  <button className="btn btn-dark my-2"><Link to={"/detailRecipe/"+item._id} className="text-white" style={{textDecoration: "none"}}>
+                  To recipe <i className="fas fa-chevron-right"></i>
+                  </Link></button>
+
+                  <div className="like-btn mt-2">
+                  {userData._id ? showBtn(item) : <small className="text-danger">*Log in for add recipe</small>}
+                  </div>
+
+                </div>
+              
                 
 
              </article>

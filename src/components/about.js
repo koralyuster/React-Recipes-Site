@@ -20,22 +20,22 @@ function About(props){
       <h2 className="mt-5 ms-3">About Us</h2>
       <p className="mt-3 ms-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit molestiae aliquid repudiandae architecto perferendis unde nostrum illo quas vitae, ea nisi. Porro iusto voluptatum aspernatur earum tempora enim aliquid, totam quod, cum quo dolorum iure saepe eius dolore tenetur nulla. Ducimus, delectus dignissimos libero corrupti, autem fugiat excepturi recusandae eius illo nam adipisci maxime. Iure beatae odio, facilis quas esse, placeat quia repellendus tempora consequuntur ratione voluptatum eveniet, similique consectetur ad amet aliquam harum in obcaecati repudiandae alias facere iusto? Atque itaque adipisci impedit accusamus tenetur perspiciatis reprehenderit, eum voluptatibus natus, beatae ad voluptas aut illo, voluptatum maiores accusantium praesentium.</p>
 
-      <div className="container">
+      <div className="container emojis">
 
         <div className="col-lg-6 p-3 mx-auto mt-5">
           <div className="d-flex justify-content-between align-items-center">
 
             <div className="text-center">
               <img className="emoji" src={picSport} alt="sport emoji"/>
-              <h4>Amit Barak</h4>
-              <h5>Love Sport</h5>
+              <h4 className="name">Amit Barak</h4>
+              <h5 className="hobby">Love Sport</h5>
             </div>
             
 
             <div className="text-center">
               <img className="emoji" src={picFlower} alt="flower emoji"/>
-              <h4>Liat Levi</h4>
-              <h5>Love Nature</h5>
+              <h4 className="name">Liat Levi</h4>
+              <h5 className="hobby">Love Nature</h5>
             </div>
 
           </div>
@@ -47,15 +47,15 @@ function About(props){
 
             <div className="text-center">
               <img className="emoji" src={picMusic} alt="sport emoji"/>
-              <h4>Adir Choen</h4>
-              <h5>Love Music</h5>
+              <h4 className="name">Adir Choen</h4>
+              <h5 className="hobby">Love Music</h5>
             </div>
             
 
             <div className="text-center">
               <img className="emoji" src={picSleep} alt="sport emoji"/>
-              <h4>Rotem Mor</h4>
-              <h5>Love Sleep</h5>
+              <h4 className="name">Rotem Mor</h4>
+              <h5 className="hobby">Love Sleep</h5>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let myApi = "http://localhost:3600";
+let myApi = "http://localhost:5000";
 if(!window.location.href.includes("localhost:")){
   myApi = "https://node-recipes-app.herokuapp.com";
 }
