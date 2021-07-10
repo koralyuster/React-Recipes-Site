@@ -15,7 +15,7 @@ What does the project include,
 * Only registered users can add a favorite recipe to favorites but also remove a recipe from favorites.
 
 ### Demo website
-* CLICK HERE : https://recipes-site-project.netlify.app/
+* CLICK HERE: https://recipes-site-project.netlify.app/
 
 * heroku: node.js- https://node-recipes-app.herokuapp.com/
 
