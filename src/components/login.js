@@ -4,8 +4,8 @@ import { Link, useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { API_URL, doApiMethod } from '../services/spiSer';
 import { updateUserData, getUserData } from '../services/userSer';
-import loginPic from './images/login-page.jpeg';
 import '../css_components/login.css';
+import backgroundImage from './images/background.jpeg';
 
 function Login(props){
 
@@ -41,39 +41,35 @@ function Login(props){
   let passwordRef = register("password", {required: true, minLength:3});
 
   return(
-    <div className="container">
+  <div className="container">
+
+    <div className="background mt-1" style={{backgroundImage:`url(${backgroundImage})`}}>
     
-<div className="row">
-  <div className="col-md-4">
+    <div className="row d-flex justify-content-center">
 
-    <h2 className="mt-5 ms-3 hello" style={{fontFamily: 'Courgette'}}>Hello!</h2>
-      <div className="ms-3">Don't have account? <Link to="/singup" style={{color:"#cc6600"}}>Create your account</Link></div>
+   
+    <form onSubmit={handleSubmit(onSubForm)} className="col-lg-6 p-3 rounded mt-3 form">
 
-    <form onSubmit={handleSubmit(onSubForm)} className="col-lg-4 p-3 rounded mt-3">
+      <h2 className="mt-5 ms-3 " style={{fontFamily: 'Courgette', letterSpacing: '0.3rem'}}>Login</h2>
+      <div className="ms-3 mb-3">Don't have an account? <Link to="/singup" style={{color:"orange"}}>Create your account</Link></div>
 
           <div>
             <input {...emailRef} type="email" placeholder="Email" className="form-control" style={{width:'19rem'}}></input>
-            {errors.email && <span className="text-danger">Enter Valid Email</span>}
+            {errors.email && <small className="text-danger">Enter Valid Email</small>}
           </div>
 
           <div>
             <input {...passwordRef} type="password" placeholder="text" placeholder="Password" className="form-control input mt-3" style={{width:'19rem'}}></input>
-            {errors.password && <span className="text-danger">Enter Min 3 Charts</span>}
+            {errors.password && <small className="text-danger">Enter Min 3 Charts</small>}
           </div>
 
-          <button className="btn btn-primary mt-3 ">Login</button>
+          <button className="mt-3 btn btnLogin">Continue  <i className="fas fa-chevron-right"></i></button>
           
         </form>
 
-  </div>
-
-  <div className="col-md-4 container-fluid mt-1">
-      <img className="imgLogin" src={loginPic} alt="cooking"/>
-  </div>
-
-</div>
-   
-    </div> 
+    </div>
+    </div>
+  </div> 
   )
 }
 

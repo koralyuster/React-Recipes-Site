@@ -45,7 +45,7 @@ function DetailRecipe(props){
   }
 
   return(
-    <div className="container-fluid mt-3 ms-2">
+    <div className="cover-container">
        {ar.map((item, i) => {
          let bg = item.recipeImage;
               return(
@@ -71,7 +71,7 @@ function DetailRecipe(props){
               )
             })}
        <div className="d-flex justify-content-right">
-         <Link to="/" className="btn btn-light shadow-sm mt-4">Back</Link>    
+         <Link to="/" className="btn btn-outline-dark shadow-sm mt-4">Back</Link>    
       </div>     
       
 

@@ -1,12 +1,15 @@
-.imgSign {
-  display: flex;
-  width: 48.5vw;
-  height: 100vh;
-  opacity: 0.8;
+.backgroundSignup {
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  opacity: 0.9;
 }
 
-@media screen and (max-width: 767px) {
-  img.imgSign {
-    display: none;
-  }
+.formSignup {
+  z-index: 1;
+  background-color: white;
+  border-radius: 4px;
+  opacity: 0.94;
+  height: 28rem;
 }

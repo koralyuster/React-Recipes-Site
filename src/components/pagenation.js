@@ -1,3 +1,4 @@
+import '../css_components/pagenation.css';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { API_URL, doApiGet, PER_PAGE } from '../services/spiSer';
@@ -24,7 +25,7 @@ function Pagenation(props){
       {/* map loop without real array */}
       {[...Array(countPage)].map((item, i) => {
         return(
-          <Link key={i} to={props.linkTo+(i+1)} className="btn btn-light ms-3 shadow-sm">{i+1}</Link>
+          <Link key={i} to={props.linkTo+(i+1)} className="btn btn-light ms-4 shadow-sm mt-4 hover">{i + 1}</Link>
         )
       })}
     </div> 

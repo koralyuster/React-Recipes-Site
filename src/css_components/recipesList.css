@@ -1,0 +1,23 @@
+hr {
+  color: orange;
+  border-top: 2px solid;
+}
+
+.btnDetails a {
+  color: orange;
+  text-decoration: none;
+}
+
+.btnDetails {
+  border-color: orange;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transform: translate3d(0, 0.2em, 0);
+  outline: none;
+}
+
+.btnDetails:hover {
+  transform: scale(1);
+  transition: opacity 300ms,
+    transform 300ms;
+}

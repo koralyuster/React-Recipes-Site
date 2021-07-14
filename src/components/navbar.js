@@ -32,8 +32,8 @@ function Navbar(props){
 
   return(
     <div>
-      <div className="row align-items-center">
-        <div className="col-lg-3 d-flex justify-content-start align-items-center">
+      <div className="row align-items-center navColor">
+        <div className="col-lg-12 d-flex justify-content-start align-items-center">
            <div className="burger" onClick={() => {
             setShowMobileNav(!showMobileNav);
           }}>
@@ -49,7 +49,7 @@ function Navbar(props){
             {!localStorage["tok"] ? 
               <React.Fragment>
                 <Link to="/login">Login</Link>
-                <Link to="/singup">Singup</Link>
+                <Link to="/singup">Sing up</Link>
               </React.Fragment>
               :
               <React.Fragment>

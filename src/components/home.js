@@ -26,7 +26,7 @@ function Home(props){
 
   return(
     <div>
-      <div className="container-fluid d-flex justify-content-center align-items-center"> 
+      <div className="cover-container d-flex align-items-center justify-content-center "> 
         <img className="img-fluid imgHome" src={pic} alt="Meal lunch"/>
         <figcaption>
           Recipes All Around The World

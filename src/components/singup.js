@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { API_URL, doApiMethod } from '../services/spiSer';
-import imgSignup from './images/signup-page.jpeg';
+import imgSignup from './images/bg.jpeg';
 import '../css_components/signup.css';
 
 function Singup(props){
@@ -52,43 +52,39 @@ function Singup(props){
   return(
     <div className="container">
 
-      <div className="row">
-        <div className="col-md-4">
-        <h2 className="mt-5 ms-3" style={{fontFamily: 'Courgette'}}>Create Account</h2>
-              <div className="ms-3">Join the international world of recipes</div>
+      <div className="backgroundSignup mt-1" style={{backgroundImage:`url(${imgSignup})`}}>
 
-              <form onSubmit={handleSubmit(onSubForm)} className="col-lg-4 p-3 rounded mt-3">
+      <div className="row d-flex justify-content-center">
+       
+        <form onSubmit={handleSubmit(onSubForm)} className="col-lg-4 p-3 rounded mt-1 formSignup">
+
+            <h2 className="mt-5 ms-3" style={{fontFamily: 'Courgette', letterSpacing: '0.3rem'}}>Create Account</h2>
+            <div className="ms-3 mb-4">Join the international world of recipes</div>
 
               <div>
                 <input {...nameRef} type="text" placeholder="Full name" className="form-control" style={{width:'19rem'}}></input>
-                {errors.name && <span className="text-danger">Enter Min 2 Charts Name</span>}
+                {errors.name && <small className="text-danger">Enter Min 2 Charts Name</small>}
               </div>
 
               <div>
                 <input {...countryRef} type="text" placeholder="Country" className="form-control mt-3" style={{width:'19rem'}}></input>
-                {errors.country && <span className="text-danger">Enter Min 2 Charts Country</span>}
+                {errors.country && <small              className="text-danger">Enter Min 2 Charts Name</small>}
               </div>
 
               <div>
                 <input {...emailRef} type="email" placeholder="Email" className="form-control mt-3" style={{width:'19rem'}}></input>
-                {errors.email && <span className="text-danger">Enter Valid Email</span>}
+                {errors.email && <small className="text-danger">Enter Valid Email</small>}
               </div>
 
               <div>
                 <input {...passwordRef} type="password" placeholder="text" placeholder="Password" className="form-control mt-3" style={{width:'19rem'}}></input>
-                {errors.password && <span className="text-danger">Enter Min 3 Charts</span>}
+                {errors.password && <small className="text-danger">Enter Min 3 Charts</small>}
               </div>
 
-                <button className="btn btn-primary mt-3" style={{width:'7rem'}}>SING UP</button>
+                <button className="btn btn-outline-danger mt-3" style={{width:'7rem'}}>SING UP  <i className="fas fa-chevron-right"></i></button>
             </form>
-        </div>
-
-        <div className="col-md-4 container-fluid mt-1">
-          <img className="imgSign" src={imgSignup} alt="table"/>
-        </div>
-
       </div>
-
+      </div>
     </div> 
   )
 }

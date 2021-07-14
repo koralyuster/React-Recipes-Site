@@ -35,7 +35,7 @@ function MyRecipes(props){
   return(
     <div className="container-fluid">
 
-      <div className="container-fluid d-flex justify-content-center align-items-center"> 
+      <div className="cover-container d-flex justify-content-center align-items-center"> 
         <img className="img-fluid imgHome" src={netbo} alt="notebook"/>
         <figcaption>
           Your Cookbook
@@ -43,7 +43,7 @@ function MyRecipes(props){
       </div>
 
       <div className="d-flex justify-content-end mt-3 mb-4">
-        <Link className="btn btn-dark mt-3" to="/addRecipe"><i className="fa fa-plus"></i> Add new Recipe</Link>
+        <Link className="btn btn-outline-dark mt-3" to="/addRecipe"><i className="fa fa-plus"></i> Add new Recipe</Link>
       </div>
 
       <div className="table-responsive ms-3">
@@ -88,7 +88,7 @@ function MyRecipes(props){
                   
                   <td>
                     <Link to={"/detailRecipe/"+item._id} style={{color:'black', textDecoration:"none"}}>
-                      <button className="btn btn-dark"><i className="fa fa-eye"></i></button>
+                      <button className="btn btn-outline-dark"><i className="fa fa-eye"></i></button>
                     </Link>
                   </td>
                 </tr>

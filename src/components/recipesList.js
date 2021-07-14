@@ -1,3 +1,4 @@
+import '../css_components/recipesList.css';
 import React, { useEffect, useState } from 'react';
 import { getUserData, removeUserRecipeFav, updateUserRecipeAddFav } from '../services/userSer';
 import { Link } from 'react-router-dom';
@@ -41,29 +42,30 @@ function RecipesList(props){
         let bg = item.recipeImage;
         return(
           <div key={item._id} className="col-lg-4 p-4">
-            <div className="p-2 border">
+            <div className="p-2">
               <article className="p-3" style={{height: "28rem"}}>
-                <div className="img_recipe shadow-sm" style={{backgroundImage: `url(${bg})`}}></div>
 
-                <h4 className="mt-2">{item.recipeName}</h4>
+                <div className="img_recipe shadow-sm" style={{backgroundImage: `url(${bg})`}}>
+                  <div className="like-btn mt-2 text-end">
+                  {userData._id ? showBtn(item) : <small className="text-white bg-dark" style={{borderRadius: '4px', padding: '4px'}}>Log in to add recipes</small>}
+                  </div>
+                </div>
+
+                <hr/>
+
+                <button className="btn mt-2 btnDetails"><Link to={"/detailRecipe/"+item._id}>
+                  {item.recipeName} 
+                  </Link> <i className="fas fa-chevron-right" style={{color: 'orange'}}></i></button>
    
                 <h5 className="mt-3">Time: {item.recipeTime}</h5>
 
                 <p>#{item.recipeType}</p>
 
                 <div className="d-flex justify-content-between">
-
-                  <button className="btn btn-dark my-2"><Link to={"/detailRecipe/"+item._id} className="text-white" style={{textDecoration: "none"}}>
-                  To recipe <i className="fas fa-chevron-right"></i>
-                  </Link></button>
-
-                  <div className="like-btn mt-2">
-                  {userData._id ? showBtn(item) : <small className="text-danger">*Log in for add recipe</small>}
-                  </div>
-
+                  
                 </div>
               
-                
+                 <hr/>
 
              </article>
             </div>

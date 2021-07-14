@@ -41,14 +41,14 @@ function AddRecipe(props){
 
   return(
     <div>
-      <h1 className="mt-5 mb-3" style={{fontFamily: 'Courgette'}}>Add new recipe</h1>
+      <h1 className="mt-4 mb-3" style={{fontFamily: 'Courgette'}}>Add new recipe</h1>
 
       <form onSubmit={handleSubmit(onSubForm)}>
 
         <div className="row">
 
           <div className="col-lg-6">
-            <label>* Recipe Name</label>
+            <label className="mt-2">* Recipe Name</label>
             <input {...nameRef} type="text" className="form-control mt-2"/>
             {errors.recipeName && <small className="text-danger">* You must fill recipe name</small>}
           </div>

@@ -10,12 +10,11 @@
   height: 70px;
 }
 
+
 @media screen and (max-width: 750px) {
   .imgAbout {
-    width: 500px;
-    height: 300px;
-    object-fit: scale-down;
-    object-position: 50% 50%;
+    object-position: 50% 20%;
+    height: 30vh;
   }
 }
 

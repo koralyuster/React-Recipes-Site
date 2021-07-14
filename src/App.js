@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
-import './css_components/nav_header.css';
+import './css_components/navbar.css';
 import './css_components/cardsRecipe.css';
 import Navbar from './components/navbar';
 import Home from './components/home';

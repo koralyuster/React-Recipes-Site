@@ -1,17 +1,35 @@
-.imgLogin {
-  display: flex;
-  width: 48.5vw;
-  height: 100vh;
+.btnLogin {
+  color: orange;
+  border-color: orange;
+  transition: all 0.5s;
 }
 
-@media screen and (max-width: 767px) {
-  img.imgLogin {
-    display: none;
-  }
+.background {
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  opacity: 0.9;
+}
 
-  .container,
-  .hello {
-    display: flex;
-    justify-content: center;
+.form {
+  z-index: 1;
+  background-color: white;
+  border-radius: 4px;
+  opacity: 0.94;
+  height: 22rem;
+  width: 25rem;
+}
+
+@media screen and (max-width: 800px) {
+  .form {
+    height: 80vh;
+    width: 33rem;
   }
+}
+
+.btnLogin:hover {
+  color: white;
+  border-color: orange;
+  background-color: orange;
 }

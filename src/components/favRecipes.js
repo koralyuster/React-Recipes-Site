@@ -25,7 +25,7 @@ function FavRecipes(props){
 
   return(
     <div>
-      <div className="container-fluid d-flex justify-content-center align-items-center"> 
+      <div className="cover-container d-flex justify-content-center align-items-center"> 
         <img className="img-fluid imgAbout" src={Favpic} alt="kitchen"/>
         <figcaption>
           Your Favorite Recipes 
