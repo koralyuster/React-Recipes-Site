@@ -30,7 +30,7 @@ function DetailRecipe(props){
           await updateUserRecipeAddFav(item._id);
           forceUpdate(update + 1);
         }}
-        className="btn btn-danger"><i className="fa fa-heart"></i></button>
+        className="btn btn-dark"><i className="fa fa-heart"></i></button>
       )
     }
     else{
@@ -39,7 +39,7 @@ function DetailRecipe(props){
           await removeUserRecipeFav(item._id);
           forceUpdate(update + 1);
         }} 
-        className="btn btn-dark"><i className="fa fa-heart"></i></button>
+        className="btn btn-danger"><i className="fa fa-heart"></i></button>
       )
     }
   }
